@@ -11,7 +11,7 @@ h1{margin:0;font-size:30px;line-height:1.15;letter-spacing:0}
 .kpi{border:1px solid var(--border);border-radius:8px;padding:16px;background:var(--card);box-shadow:var(--shadow)}
 .kpi strong{display:block;font-size:28px;line-height:1.1}
 .kpi span{display:block;margin-top:6px;color:var(--muted);font-size:12px}
-.controls{display:grid;grid-template-columns:minmax(240px,1fr) 180px 180px 100px;gap:10px;align-items:center;margin:20px 0 16px}
+.controls{display:grid;grid-template-columns:minmax(240px,1fr) 170px 170px 96px 148px;gap:10px;align-items:center;margin:20px 0 16px}
 input,select,button{font:inherit;color:inherit;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px 12px}
 input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 button{cursor:pointer;background:var(--card);border-color:var(--border)}
@@ -21,7 +21,9 @@ section{margin-top:32px}
 h2{margin:0 0 14px;font-size:20px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
 .card{border:1px solid var(--border);border-radius:8px;background:var(--card);padding:16px;box-shadow:var(--shadow)}
+.card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
 .card h3{margin:0 0 10px;font-size:16px;line-height:1.35}
+.card-header h3{flex:1}
 .card p{margin:8px 0 0;font-size:13.5px;line-height:1.55}
 .ids{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .chip{display:inline-flex;align-items:center;min-height:22px;padding:3px 8px;border-radius:999px;border:1px solid var(--border);background:var(--card);font-size:11.5px}
@@ -43,6 +45,9 @@ tbody tr:hover td{background:rgba(127,127,127,.06)}
 .status.history{color:var(--muted)}
 .excerpt{max-width:620px;color:var(--muted)}
 .note{border-left:3px solid var(--primary);padding-left:10px;margin-top:6px}
+.delete-btn{flex:0 0 auto;width:34px;height:34px;min-width:34px;padding:0;display:inline-flex;align-items:center;justify-content:center;color:var(--warning);font-size:20px;line-height:1}
+.delete-btn:hover{border-color:var(--warning);color:var(--warning)}
+.delete-btn:disabled{opacity:.45;cursor:not-allowed}
 .empty{padding:32px;color:var(--muted);text-align:center}
 .count{margin:0 0 14px;color:var(--muted);font-size:13px}
 .count-badge{display:inline-flex;align-items:center;min-width:24px;padding:2px 8px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--muted);font-size:12px}

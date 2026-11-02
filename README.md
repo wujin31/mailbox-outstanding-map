@@ -8,6 +8,7 @@ The full map provides:
 - status and bucket filters
 - a priority board for reviewed action items
 - a complete live-cluster inventory
+- cluster deletion with restore; deletions are saved in your browser
 
 The compact summary provides the same reviewed priorities in a simpler, sectioned layout.
 
