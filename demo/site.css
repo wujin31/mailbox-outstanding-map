@@ -1,0 +1,24 @@
+:root{color-scheme:light dark;--bg:#f6f7f9;--fg:#17202a;--muted:#5d6673;--card:#fff;--border:#d9dee6;--primary:#1d4ed8;--primary-fg:#fff;--accent:#0f766e;--warning:#b45309;--focus:#93c5fd;--shadow:0 1px 2px rgba(15,23,42,.08)}
+@media(prefers-color-scheme:dark){:root{--bg:#101112;--fg:#e5e5e5;--muted:#a1a1aa;--card:#1d1e20;--border:#333;--primary:#60a5fa;--primary-fg:#111;--accent:#34d399;--warning:#fbbf24;--focus:#38bdf8;--shadow:0 1px 2px rgba(0,0,0,.45)}}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--fg);background:var(--bg);line-height:1.5}
+main{max-width:1500px;margin:0 auto;padding:28px 24px 64px}header{display:grid;grid-template-columns:minmax(300px,1fr) auto;gap:20px;align-items:end;padding-bottom:18px;border-bottom:1px solid var(--border)}
+h1{margin:0;font-size:30px;line-height:1.15}.meta{margin-top:8px;color:var(--muted);font-size:13px}
+.coverage{margin:18px 0;padding:12px 14px;border:1px solid var(--accent);border-radius:8px;background:var(--card);color:var(--accent);font-weight:600}
+.coverage.bad{border-color:var(--warning);color:var(--warning)}
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(140px,1fr));gap:12px;margin:22px 0 26px}.kpi{border:1px solid var(--border);border-radius:8px;padding:14px;background:var(--card);box-shadow:var(--shadow)}
+.kpi strong{display:block;font-size:26px}.kpi span{display:block;margin-top:5px;color:var(--muted);font-size:12px}
+.controls{display:grid;grid-template-columns:minmax(260px,1fr) 170px 100px 145px 160px;gap:10px;margin:18px 0 14px}
+input,select,button{font:inherit;color:inherit;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px 12px}
+button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.refresh-status{margin:-4px 0 14px;color:var(--muted);font-size:13px}.refresh-status.error{color:var(--warning)}.refresh-status.active{color:var(--primary)}
+.removed-log{margin:18px 0;border:1px solid var(--border);border-radius:8px;padding:12px 14px;background:var(--card)}.removed-log summary{cursor:pointer;font-weight:600}.removed-log ul{margin:10px 0 0;padding-left:18px;max-height:360px;overflow:auto}.removed-log li{margin:6px 0}
+.tablewrap{border:1px solid var(--border);border-radius:8px;overflow:auto;background:var(--card);box-shadow:var(--shadow)}
+table{width:100%;min-width:1180px;border-collapse:collapse;font-size:13.5px}th{position:sticky;top:0;background:var(--card);text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);border-bottom:1px solid var(--border);padding:12px;white-space:nowrap}
+td{border-bottom:1px solid var(--border);padding:12px;vertical-align:top}tbody tr:nth-child(even){background:rgba(127,127,127,.04)}tbody tr:hover td{background:rgba(127,127,127,.06)}
+.status{display:inline-block;min-width:120px;padding:4px 8px;border:1px solid var(--border);border-radius:999px;text-align:center;font-size:11.5px}.status.action{color:var(--warning);border-color:var(--warning)}.status.awaiting{color:var(--primary);border-color:var(--primary)}.status.automated{color:var(--muted)}.status.unread{color:var(--accent);border-color:var(--accent)}
+.mono{font-family:ui-monospace,Consolas,monospace;font-size:12.5px}.muted{color:var(--muted)}.subject{font-weight:600}.excerpt{max-width:520px;color:var(--muted)}
+.ids{display:flex;flex-wrap:wrap;gap:6px}.chip{display:inline-flex;min-height:22px;padding:3px 8px;border:1px solid var(--warning);border-radius:999px;color:var(--warning);font-size:11.5px}
+details{margin-top:8px}summary{cursor:pointer;color:var(--primary)}details ul{margin:8px 0 0;padding-left:18px}details li{margin:6px 0}
+.delete-btn{width:34px;height:34px;min-width:34px;padding:0;color:var(--warning);font-size:20px;line-height:1}.delete-btn:hover{border-color:var(--warning)}.message-delete{width:24px;height:24px;min-width:24px;font-size:15px}
+.empty{padding:30px;color:var(--muted);text-align:center}.count{margin:0 0 12px;color:var(--muted);font-size:13px}footer{margin-top:30px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:12.5px}
+@media(max-width:1000px){main{padding:22px 14px 50px}header,.kpis,.controls{grid-template-columns:1fr}.kpis{gap:10px}.excerpt{max-width:none}}
